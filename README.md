@@ -1,1 +1,1 @@
-# Pokemon-Clicky-Game
+# Clicky-Game

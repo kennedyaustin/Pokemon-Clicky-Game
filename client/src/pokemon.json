@@ -1,0 +1,87 @@
+[
+
+    {
+        "id": 1,
+        "name": "Lucario",
+        "image": "https://i.pinimg.com/564x/a7/8c/65/a78c65c119d57c9a5bef72e4c2f207bb.jpg",
+        "isClicked": false
+    },
+
+    {
+        "id": 2,
+        "name": "Arcanine",
+        "image": "https://i0.wp.com/nintendosoup.com/wp-content/uploads/2019/06/arcanineblep.jpg?fit=1199%2C776&ssl=1&resize=1280%2C720",
+        "isClicked": false
+    },
+
+    {
+        "id": 3,
+        "name": "Charizard",
+        "image": "https://i.pinimg.com/originals/92/0c/d2/920cd27fe1dfe347bfaa7771b152793f.jpg",
+        "isClicked": false
+    },
+
+    {
+        "id": 4,
+        "name": "Blastoise",
+        "image": "https://hardcore-gamer.s3.amazonaws.com/uploads/2019/11/blastoise.jpg",
+        "isClicked": false
+    },
+
+    {
+        "id": 5,
+        "name": "Venusaur",
+        "image": "https://pbs.twimg.com/media/EZ9WP9KU8AIz-NM.jpg",
+        "isClicked": false
+    },
+
+    {
+        "id": 6,
+        "name": "Umbreon",
+        "image": "https://64.media.tumblr.com/01993bdd46078de871eeecd77f8a781b/tumblr_pwm1tag7p41vaz8vgo1_400.png",
+        "isClicked": false
+    },
+
+    {
+        "id": 7,
+        "name": "Gengar",
+        "image": "https://cdna.artstation.com/p/assets/images/images/017/570/884/medium/bia-busana-gengar-a.jpg?1556538929",
+        "isClicked": false
+    },
+
+    {
+        "id": 8,
+        "name": "Latios",
+        "image": "https://i.pinimg.com/originals/b0/9e/40/b09e4034ea3c4aee98076b8916d1af3b.png",
+        "isClicked": false
+    },
+
+    {
+        "id": 9,
+        "name": "Dugtrio",
+        "image": "https://vignette.wikia.nocookie.net/poohadventures/images/b/b6/Katie_Dugtrio-1-.png/revision/latest?cb=20130903010041",
+        "isClicked": false
+    },
+
+    {
+        "id": 10,
+        "name": "Lapras",
+        "image": "https://danbooru.donmai.us/data/__lapras_and_gigantamax_lapras_pokemon_drawn_by_netarou_pixiv31154028__5c36b6e1d6e928a5500ad79bcdb15af9.png",
+        "isClicked": false
+    },
+
+    {
+        "id": 11,
+        "name": "Lycanroc",
+        "image": "https://cdn.mos.cms.futurecdn.net/HjC5uLW3GckFMnwi8mazxa.jpg",
+        "isClicked": false
+    },
+    
+    {
+        "id": 12,
+        "name": "Houndoom",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQhUWmUzQ42BsWybm_3JN-kdYD71ErYnWsgKQ&usqp=CAU",
+        "isClicked": false
+    }
+    
+]
