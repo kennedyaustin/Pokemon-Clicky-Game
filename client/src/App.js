@@ -1,15 +1,15 @@
 import React, { Component } from "react";
-import Card from "./components/PokemonCard/Card";
+import PokemonCard from "./components/PokemonCard/Card";
 import Wrapper from "./components/Wrapper/Wrapper";
 import Score from "./components/Score/Score";
-import pups from "./pokemon.json";
+import pokemon from "./pokemon.json";
 import "./App.css";
 
 class App extends Component {
-  // Setting this.state.pups to the cards json array
+  // Setting this.state.pokemon to the cards json array
   state = {
-    pups,
-    clickedPuppyIds: [],
+    pokemon,
+    clickedPokemon: [],
     score: 0,
     goal: 8,
     status: ""
@@ -17,25 +17,26 @@ class App extends Component {
 
   //shuffle the pup cards in the browser when clicked
   shuffleScoreCard = id => {
-    let clickedPuppyIds = this.state.clickedPuppyIds;
+    let clickedPokemon = this.state.clickedPokemon;
 
-    if(clickedPuppyIds.includes(id)){
-      this.setState({ clickedPuppyIds: [], score: 0, status:  "Game Over! You lost. Click to play again!" });
-      return;
-    }else{
-      clickedPuppyIds.push(id)
+    if(clickedPokemon.includes(id)){
 
-      if(clickedPuppyIds.length === 8){
-        this.setState({score: 8, status: "You Won! Great Job, Smartie! Click to play again!", clickedPuppyIds: []});
+      this.setState({ score: 0, status:  "Game over, you clicked the same Pokemon twice! Click a picture to try again!", clickedPokemon: [] });
+
+    } else {
+
+      clickedPokemon.push(id)
+      if(clickedPokemon.length === 8){
+        this.setState({score: 8, status: "You Won! Great Job, Smartie! Click to play again!", clickedPokemon: []});
         console.log('You Win');
         return;
       }
 
-      this.setState({ pups, clickedPuppyIds, score: clickedPuppyIds.length, status: " " });
+      this.setState({ pokemon, clickedPokemon, score: clickedPokemon.length, status: " " });
 
-      for (let i = pups.length - 1; i > 0; i--) {
+      for (let i = pokemon.length - 1; i > 0; i--) {
         let j = Math.floor(Math.random() * (i + 1));
-        [pups[i], pups[j]] = [pups[j], pups[i]];
+        [pokemon[i], pokemon[j]] = [pokemon[j], pokemon[i]];
       }
     }
   }
@@ -55,8 +56,8 @@ class App extends Component {
                status={this.state.status}
                />
         <Wrapper>
-          {this.state.pups.map(puppy => (
-            <Card
+          {this.state.pokemon.map(puppy => (
+            <PokemonCard
               shuffleScoreCard={this.shuffleScoreCard}
               id={puppy.id}
               key={puppy.id}
