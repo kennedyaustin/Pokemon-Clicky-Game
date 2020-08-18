@@ -3,11 +3,8 @@
   height: 70px;
   position: relative;
   line-height: 1em;
-  padding: 0;
+  padding-top: 25px;
   margin: 0;
-}
-div.gameScore {
-
 }
 
 h3.score {
@@ -18,5 +15,5 @@ h3.score {
 h3.status{
   margin: 0;
   padding: 0;
-  color: red;
+  color: black;
 }

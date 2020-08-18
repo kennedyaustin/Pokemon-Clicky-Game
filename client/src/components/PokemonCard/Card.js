@@ -1,8 +1,8 @@
 import React from "react";
 import "./Card.css";
 
-//this component is only rendering the images to the screen and can be a simple render function it is a
-//stateless component
+// This will render the pokemon cards to the screen with the help of the information from the 
+// pokemon.json file
 const PokemonCard = props => (
   <div className="card img-container hover">
       <img alt={props.name} src={props.image} id={props.id}

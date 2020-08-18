@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PokemonCard from './components/PokemonCard/Card';
 import Wrapper from './components/Wrapper/Wrapper';
 import Score from './components/Score/Score';
+import Header from './components/Header/Header'
 import pokemon from './pokemon.json';
 import './App.css';
 
@@ -12,7 +13,7 @@ class App extends Component {
     clickedPokemon: [],
     score: 0,
     maxScore: 12,
-    status: ''
+    message: ''
   };
 
   //shuffle the pup cards in the browser when clicked
@@ -21,7 +22,8 @@ class App extends Component {
 
     if(clickedPokemon.includes(id)){
 
-      this.setState({ score: 0, status:  'Game over, you clicked the same Pokemon twice! Click a picture to try again!', clickedPokemon: [] });
+      // Handles the resetting of the game
+      this.setState({ score: 0, message:  'Game over, you clicked the same Pokemon twice! Click a picture to try again!', clickedPokemon: [] });
 
     } else {
 
@@ -30,11 +32,12 @@ class App extends Component {
       // If the length of the clickedPokemon array reaches 12 display to the user that they have won
       if(clickedPokemon.length === 12){
 
-        this.setState({score: 12, status: 'Victory! You clicked all the Pokemone without clicking on the same one!', clickedPokemon: []});
+        this.setState({score: 12, message: 'Victory! You clicked all the Pokemone without clicking on the same one!', clickedPokemon: []});
 
       }
 
-      this.setState({ pokemon, clickedPokemon, score: clickedPokemon.length, status: '' });
+      // Handles the counting of the score
+      this.setState({ pokemon, clickedPokemon, score: clickedPokemon.length, message: '' });
 
       // Randomize the pokemon cards when the user clicks on one
       for (let i = pokemon.length - 1; i > 0; i--) {
@@ -48,25 +51,24 @@ class App extends Component {
   render() {
     return (
       <div className='App text-center'>
-        <header className='header'>
-          <h1 className='title'>Pokemon Clicky Game!</h1>
-          <p className='introduction'>
-            Click any image to begin your game, but don't click the same picture twice!
-          </p>
-        </header>
+        <Header />
+        {/* Sends score, maxScore, and message states to the Score component for use */}
         <Score 
           total={this.state.score}
           maxScore={this.state.maxScore}
-          status={this.state.status}
+          message={this.state.message}
         />
         <Wrapper>
           {this.state.pokemon.map(pokemon => (
+
+            // Renders the Pokemon cards onto the page
             <PokemonCard
               shufflePokemonCards={this.shufflePokemonCards}
               id={pokemon.id}
               key={pokemon.id}
               image={pokemon.image}
             />
+
           ))}
         </Wrapper>
     </div>
