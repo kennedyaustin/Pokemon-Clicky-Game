@@ -64,10 +64,6 @@ class App extends Component {
             />
           ))}
         </Wrapper>
-        <footer>
-          <p>Designed and built by Heather Mathies. You can find the
-          code<a href="https://github.com/hmathies/Clicky-Game" target="_blank" rel="noopener noreferrer"> here</a>.</p>
-        </footer>
     </div>
     );
   }
