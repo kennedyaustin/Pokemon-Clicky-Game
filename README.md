@@ -12,3 +12,4 @@ For this project, a memory game was created with React. The app was built by bre
 
 # Usage
 When the user first gets onto the page,  they will be able to read the instructions in the header as well as the name of the application.
+![](images/header.png)
