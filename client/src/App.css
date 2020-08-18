@@ -1,15 +1,15 @@
 
-.App-header {
+.header {
   background-color: #222;
   height: 80px;
   padding: 10px;
   color: white;
 }
 
-.App-title {
+.title {
   font-size: 2em;
 }
 
-.App-intro {
+.intro {
   font-size: large;
 }
