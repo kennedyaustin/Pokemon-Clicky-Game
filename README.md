@@ -15,4 +15,4 @@ When the user first gets onto the page, they will be able to read the instructio
 ![](images/header.png) <br>
 When the user scrolls down they will see the 12 images they will be using to play this memory game. Each time the user clicks on one of the Pokemon, the images will shuffle and the player will click another picture. 
 ![](images/clicky.png) <br>
-
+The user will be shown a message depending on how they do at the end of their game. If the user isn't able to get all 12 images they will get a game over message, but if they get all 12 correctly they will get a congratulatory message.
