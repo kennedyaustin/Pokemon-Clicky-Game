@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import Card from "./components/Card";
-import Wrapper from "./components/Wrapper";
-import Score from "./components/Score";
+import Card from "./components/PokemonCard/Card";
+import Wrapper from "./components/Wrapper/Wrapper";
+import Score from "./components/Score/Score";
 import pups from "./cards.json";
 import "./App.css";
 
