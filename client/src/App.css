@@ -1,15 +1,14 @@
-
 .header {
   background-color: #222;
   height: 80px;
-  padding: 5px;
+  padding: 10px;
   color: white;
 }
-
+  
 .title {
   font-size: 2em;
 }
-
+  
 .intro {
   font-size: large;
 }
